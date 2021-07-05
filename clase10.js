@@ -4,13 +4,46 @@ var luis = {
     edad: 28,
     ingeniero: true,
     cantante: false,
-    GUITARRISTA: false,
-    cosinero: false,
-    drone: true 
+    guitarrista: false,
+    cocinero: false,
+    drone: true,
+    dj: false
 
 }
 
-function imprimirSiEsMayor(persona){
+function imprimirProfesiones(persona){
+    // esto se llama template strink las comillas invertidas
+    console.log(`${persona.nombre} es:`)
+    if (persona.ingeniero) {
+        console.log('Ingeniero')
+    }
+    if (persona.cocinero) {
+        console.log('Cocinero')
+    }
+    if (persona.dj) {
+        console.log('Dj')
+    }
+    if (persona.cantante) {
+        console.log('Cantante')
+    }
+
+    if (persona.guitarrista) {
+        console.log('Guitarrista')
+    }
+
+    if (persona.cocinero) {
+        console.log('Cocinero')
+    }
+
+    if (persona.drone) {
+        console.log('Piloto de Drone')
+    }
+}
+imprimirProfesiones(luis)
+
+//desafio si es mayor de edad
+
+function imprimirSiEsMayorDeEdad(persona) {
     console.log(`${persona.nombre} es:`)
     if(persona.edad >= 18){
         console.log(' mayor de edad')
@@ -18,4 +51,6 @@ function imprimirSiEsMayor(persona){
         console.log('no es mayor de edad')
     }
 }
-imprimirSiEsMayor(luis)
+
+imprimirSiEsMayorDeEdad(luis);
+
