@@ -17,9 +17,10 @@ function imprimierrNombreMayuscula(persona ){
 
 imprimierrNombreMayuscula(luis)
 imprimierrNombreMayuscula(angel)
-
+//con esto debuelve un objeto de otro objeto
 function cumpleanos(persona){
     return{
+        //esto de descgloza con los puntos 
         ...persona,
         edad: persona.edad + 1
     }
