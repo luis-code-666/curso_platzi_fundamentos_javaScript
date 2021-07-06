@@ -29,3 +29,4 @@ margarita.soyAlto()
 
 // el prototipo es un objeto mas de javascript
 // que pasa con arrow funcion que tenga un this son algunas fallas que pasa al momento de hacer codigo 
+// this es de wuindows 
